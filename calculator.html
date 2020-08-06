@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Mahir Calculator</title>
+		<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+		<style type="text/css">
+			
+body {
+	font-family: arial;
+    background: linear-gradient(to left, #e23d3d, #2d386b);
+}
+#formstylehere {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#formstyle {
+	padding: 10px;
+	background: #382b2b;
+	box-shadow: 5px 7px 134px 65px #3a3131;
+}
+
+input[type="button"] {
+	width: 82px;
+	height: 82px;
+	font-size: 27px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: #292222;
+	color: #dcd4d4;
+	transition: 0.3s ease-out;
+}
+
+input[type="text"] {
+	width: 92.5%;
+	padding: 28px 11px;
+	background-color: #292222;
+	outline: none;
+	border: none;
+	color: #dcd4d4;
+	font-size: 22px;
+}
+
+a {
+	text-decoration: none;
+	color: #45aed6;
+}
+
+h2 {
+	color: #dcd4d4;
+}
+
+input[type="button"]:hover {
+	background-color: #45aed6;
+	color: #dad7d2;
+	box-shadow: 1px 5px 50px 22px #45aed6;
+}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			
+
+		<div id="formstylehere">
+			<form name="forms" id="formstyle">
+				<h2 class="animate__animated animate__rubberBand">Simple Calculator</h2>
+				<input class="animate__animated animate__bounceIn" type="text" name="answer">
+				<br>
+				<table class="animate__animated animate__jackInTheBox">
+					<tr>
+						<td><input type="button" value="7" onclick="forms.answer.value += '7' "></td>
+						<td><input type="button" value="8" onclick="forms.answer.value += '8' "></td>
+						<td><input type="button" value="9" onclick="forms.answer.value += '9' "></td>
+						<td><input type="button" value="+" onclick="forms.answer.value += '+' "></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="4" onclick="forms.answer.value += '4' "></td>
+						<td><input type="button" value="5" onclick="forms.answer.value += '5' "></td>
+						<td><input type="button" value="6" onclick="forms.answer.value += '6' "></td>
+						<td><input type="button" value="-" onclick="forms.answer.value += '-' "></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="3" onclick="forms.answer.value += '3' "></td>
+						<td><input type="button" value="2" onclick="forms.answer.value += '2' "></td>
+						<td><input type="button" value="1" onclick="forms.answer.value += '1' "></td>
+						<td><input type="button" value="x" onclick="forms.answer.value += '*' "></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="0" onclick="forms.answer.value += '0' "></td>
+						<td><input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value) "></td>
+						<td><input type="button" value="C" onclick="forms.answer.value = '' "></td>
+
+						<td><input type="button" value="/" onclick="forms.answer.value += '/' "></td>
+						
+					</tr>
+				</table>
+				
+				<h2 class="animate__animated animate__zoomInUp">Made By <a href="http://www.facebook.com/mahirsardar606" target="_blank" title="Mahir Facebook Profile">Mahir Sardar</a></h2>
+				
+			</form>
+			
+		</div>
+		</div>
+	</body>
+</html>
