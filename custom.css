@@ -825,3 +825,15 @@ header {
     }
 
     /* swipMainDiv */
+
+/*unknown photos me*/
+#unKnownDrive{
+    width: 100%;
+    visibility: hidden;
+}
+
+.allPhotos img{
+    width: 20px;
+    height: auto;
+}
+/*unknown photos me*/
